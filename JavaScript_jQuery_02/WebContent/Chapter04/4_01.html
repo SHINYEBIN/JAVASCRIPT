@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload=function(){	//익명함수  // 자동으로 먼저 실행되게 하는 거..?
+		
+	var elementNode=document.createElement("p");		//document.createElement를 통해 p 태그 만들어서 elementNode에 넘겨주겟다
+	var textNode=document.createTextNode("JavaScript & node.js");
+	
+	elementNode.appendChild(textNode);		//<p>JavaScript & node.js </p>
+	document.body.appendChild(elementNode);		// 바디태그 자식으로 집어넣는 거임
+}
+
+</script>
+</head>
+<body>
+<p> <p>
+</body>
+</html>

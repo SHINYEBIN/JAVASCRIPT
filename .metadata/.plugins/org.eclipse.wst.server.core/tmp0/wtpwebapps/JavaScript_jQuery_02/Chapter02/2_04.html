@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function createHello(){
+		function hello(user){	// 함수를 정의하고 만들어진 함수를 반환한거임.
+			document.write(user+"님 방문을 환영합니다.");
+		}
+		
+		return hello;
+	}
+	
+	var result=createHello(); 
+	result("홍길동");			//hello("홍길동"); 이 얘기다.
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

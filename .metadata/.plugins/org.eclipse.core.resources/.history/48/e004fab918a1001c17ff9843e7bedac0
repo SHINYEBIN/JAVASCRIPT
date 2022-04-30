@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var imgNode=document.createElement("img");
+		imgNode.src="../images/logo.png";
+		imgNode.width="170";	// 별 얘기 없으면 단위는 픽셀
+		imgNode.height="67";
+		
+		document.body.appendChild(imgNode);
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#area1{
+		width:300px;
+		height:200px;
+		border:1px dashed black;
+	}
+	#area2{
+		width:300px;
+		height:200px;
+		border:1px dashed darked;
+	}
+	#area3{
+		width:300px;
+		height:200px;
+		border:1px dashed indianred;
+	}
+</style>
+<script type="text/javascript">
+	function start(){
+		alert("웹 문서가 로드되었습니다.");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

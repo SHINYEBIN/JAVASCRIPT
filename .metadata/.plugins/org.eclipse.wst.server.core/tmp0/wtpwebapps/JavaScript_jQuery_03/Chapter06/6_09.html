@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		font-size:16px;	//px생략가능
+		font-family:"굴림";
+	}
+	
+	ul li{
+		border:1px #eeeeee solid;
+		margin:10px
+	}
+	
+	ul{
+		padding:10px;
+	}
+	
+	li.select{
+		background-color:#ccc;	
+	}
+	
+	#output{
+		border:1px solid #000;
+		min-height:100px;
+	}
+	
+</style>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var output=$("#output");
+		var menu=$("ul.menu");
+		var count=0;
+		
+		$("#add").click(function(){
+			count++;
+			var newItem=$("<li>new"+count+"</li>");
+			menu.append(newItem);
+			
+			var event=$.Event("addItem"); 	//jquery의 도움을 받아 내가만든걸 이벤트로 받는다. jquery를 줄여서 $라고 하는 거다.
+			event.item=newItem;		// 객체에 객체 대입?
+			event.itemName=newItem.text();
+			event.itemLength=menu.children().length;
+			menu.trigger(event);
+			
+			
+			
+		});
+		
+		menu.on("addItem",function(e){ //addItem는 내가 만든 이벤트(개발자들이 만든 이벤트 아님!)
+			output.prepend("<p>추가아이템:"+e.itemName+", 아이템 개수="+e.itemLength+"</p>");
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<button id="add">추가</button>
+	</div>
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+	</ul>
+	<p>추가 정보가 출력되는 영역</p>
+	<div id="output">
+	
+	</div>
+</body>
+</html>

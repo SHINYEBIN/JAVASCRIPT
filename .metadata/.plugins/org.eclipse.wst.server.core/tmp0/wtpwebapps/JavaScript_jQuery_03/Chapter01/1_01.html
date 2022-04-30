@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+/*
+	window.onload=function(){
+		var menu=document.getElementById("menu");
+		var liList=menu.getElementsByTagName("li");
+		//document.write(liList);		//얘때문에 바디가 안보였던거임..!
+		console.log(liList);
+		
+		for(var i=0;i<liList.length;i++){
+			var li=liList[i];
+			li.style.color="#f00";			// 이렇게 색을 줘도 되고
+			//liList[i].style.color="#f00";		// 저렇게 색을 줘도 된다.
+			
+		}
+		
+		//menu.style.color="#f00";		// 또 메뉴전체에 색을 줄 수 있다.(보편적)
+	}
+*/
+//jquery로 하는법?
+		$(document).ready(function(){	//자.스에서 document.onload 하는 것과 같다
+		$("#menu li").css("color","#f00");
+		});
+
+</script>
+</head>
+<body>
+	<ul id="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+	</ul>
+</body>
+</html>

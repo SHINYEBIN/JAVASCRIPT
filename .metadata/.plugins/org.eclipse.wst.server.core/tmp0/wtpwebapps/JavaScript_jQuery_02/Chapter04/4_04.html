@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">		
+//왼쪽 상단 로고 넣는 법이라고 해야하나?
+/*
+	window.onload=function(){		
+		var imgNode=document.createElement("img");
+		imgNode.src="./images/logo.png";
+		imgNode.width="170";	// 별 얘기 없으면 단위는 픽셀
+		imgNode.height="67";
+		
+		document.body.appendChild(imgNode);
+	}
+*/
+
+	var imgNode=document.createElement("img");
+	imgNode.setAttribute("src","./images/logo.png");	//setAttribute: 속성 저장?
+	imgNode.setAtrribute("width",170);
+	imgNode.setAtrribute("height",67);
+	document.body.appendChild(imgNode);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

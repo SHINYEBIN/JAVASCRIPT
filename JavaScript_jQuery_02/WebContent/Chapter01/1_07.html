@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var name="test1";		// 함수 바깥에서 쓰는 변수: 전역변수
+	
+	function func1(){		//함수 안에서 선언한 변수와 바깥에서 선언한 변수는 다르다.
+		var name="test2";	//함수 안에서 쓰는 변수: 지역변수	// 지역 변수 우선.
+		document.write("2.name="+name,"<br>");	// test2  // 함수 안에서 선언된 변수는 함수 안에서 사용한다. 여기서의 name은 지역변수 name(지역변수가 우선이기 때문)
+	}
+	
+	function func2(){
+		var name="test3";
+		document.write("3.name="+name,"<br>");
+	}
+	
+	function func3(){
+		var name="test20";
+		document.write("4.name="+name,"<br>");
+	}
+	
+	document.write("1.name="+name,"<br>");		//test1
+	func1();	//test2
+	func2();	//test3
+	func3();	//test4
+	document.write("5.name="+name,"<br>");		//test1
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

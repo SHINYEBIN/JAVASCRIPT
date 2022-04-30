@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sample(){
+		var sum=0;
+		var count=0;
+		
+		while(true){// 무한으로 돌리면서
+			//var value=Number(window.prompt("수 입력", 1)); //Number라는 숫자랑 관련된 객체가 있다.
+			var value=parseInt(window.prompt("수 입력",1));	//입력하는 곳이 문자열이다. //parseInt : 문자열을 숫자열로 바꿔주는
+			if(value == 0){
+				document.write("종료합니다.","<br>");
+				break;
+			}
+			sum+=value;
+			count++;
+			document.write(count+"."+sum+"<br>");
+		}
+		document.write("총 "+count+"번 실행했습니다.");
+	}
+	
+	sample();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

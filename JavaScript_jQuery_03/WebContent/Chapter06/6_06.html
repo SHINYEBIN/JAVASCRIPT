@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+// 동적으로 메뉴 항목 추가하고 메뉴 항목 클릭시 클릭한 메뉴 항목 출력
+	$(document).ready(function(){
+		var menu=$("ul.menu");
+		var count=0;
+		
+		// #add 버튼에 클릭 이벤트 등록
+		$("#add").click(function(){
+			count++;
+			var newItem=$("<li>new"+count+"</li>");
+			newItem.on("click",function(){
+				alert($(this).html());
+			});
+			menu.append(newItem);
+		});
+		// 선택한 메뉴 항목 출력
+		$("ul li").on("click",function(){
+			alert($(this).html());
+		});
+	});
+</script>
+</head>
+<body>
+	<button id="add">추가</button>
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+	</ul>
+	
+</body>
+</html>

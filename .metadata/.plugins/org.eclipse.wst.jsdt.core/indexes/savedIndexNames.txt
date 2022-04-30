@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Java Emp Class Lecture 2021-12-27\JavaScript jQuery Emp Class Lecture\JavaScript Workspace Lecture\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+442904394.index
+2845576843.index
+1435341670.index
+4231015039.index
+306072403.index
+1142205860.index
+3429740599.index
+3577495953.index
+1698266053.index

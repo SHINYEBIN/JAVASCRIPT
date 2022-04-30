@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" src="../libs/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+// 클릭한 메뉴 항목 출력
+	$(document).ready(function(){
+		
+		 $("ul").one("click",function(e){
+			console.log("테스트 용="+e.target.tagName);
+			if(e.target.tagName == "LI"){
+				alert($(e.target).html()); 
+			}
+		}); 
+	});
+</script>
+</head>
+<body>
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+	</ul>
+	
+</body>
+</html>

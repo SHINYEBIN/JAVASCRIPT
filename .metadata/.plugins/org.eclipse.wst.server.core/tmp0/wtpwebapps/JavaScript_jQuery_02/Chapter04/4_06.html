@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var str="";		
+		str += "<p id='jsTitle'>JavaScript & Node.js </p>";		 //id에 무언갈 하겠구나를 체크해야함.
+		str +="<img id='logoImg' src='./images/logo.png'>";	
+		
+		document.body.innerHTML=str;		//innerHTML에 str을 대입. 
+		
+		var titleNode=document.getElementById("jsTitle");
+		titleNode.style.fontSize="1.2em"  //기본 16px		//em:화면 비율에 맞춰 사이즈를 정하겠다.
+		titleNode.style.border="1px solid #ff0000";
+		
+		var logoNode=document.getElementById("logoImg");
+		logoNode.style.width="170px";
+		logoNode.style.height="67px";
+		
+	}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

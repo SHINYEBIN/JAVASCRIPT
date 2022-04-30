@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#cEvent{
+		width:200px;
+		height:100px;
+		text-align:1.2em;
+		background-color:#f00;
+		color:#fff;
+		font-weight:bolder;
+	}
+</style>
+<script type="text/javascript">
+/*
+window.onload=function(){		//브라우저가 실행되면서 자동으로 js가 실행된다.
+	var ce=document.getElementById("cEvent");	//id값 가져옴
+	ce.onclick=function(){
+		console.log("click!");
+	}
+}
+*/
+	window.onload=function(){	//브라우저가 실행되면서 function이 실행되는 것.
+	var ce=document.getElementById("cEvent");
+	ce.onclick=clickEventHander;
+	function clickEventHander(){
+		console.log("clickEventHander");
+	}
+}
+</script>
+</head>
+<body>
+	<div id="cEvent">click event</div> 	
+</body>
+</html>

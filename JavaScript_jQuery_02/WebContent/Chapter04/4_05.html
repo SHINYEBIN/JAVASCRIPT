@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var str="";		//초기값으로 문자열 저장.
+		str += "<p>JavaScript & Node.js </p>" //문자열을 누적시켜서 연결시키겠다. Node js: 자바스크립트를 서버에서 처리하는 프레임워크?
+		str +="<img src='./images/logo.png'";	// "''"
+		str += "width=170 height=67>";
+		
+		//document.body.appendChild(str);		// 문자열로 하니까 적용이 안됨.
+		document.body.innerHTML=str;		//innerHTML에 str을 대입. 
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

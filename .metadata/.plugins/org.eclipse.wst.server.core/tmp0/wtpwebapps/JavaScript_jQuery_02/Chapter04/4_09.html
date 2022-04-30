@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#cEventAdd{
+		width:200px;
+		height:100px;
+		line-height:100px;
+		text-align:center;
+		font-size:1.2em;
+		background-color:#f00;
+		color:#fff;
+		font-weight:bolder;
+	}
+	
+	#cEventRem{
+		width:200px;
+		height:100px;
+		line-height:100px;
+		text-align:center;
+		font-size:1.2em;
+		background-color:#0f0;
+		color:#fff;
+		font-weight:bolder;
+	}
+	
+</style>
+
+<script type="text/javascript">
+		window.onload=function(){		// 모든 준비가 됐으면 그때 js를 실행한다(브라우저가 다 일단 훑고 난 후 나중에 js를 실행한다.)
+		function addHandler(){
+		console.log("click");
+		}
+	
+		function removeHandler(){
+		console.log("event remove!!");
+		}
+	
+		var ceA=document.getElementById("cEventAdd");	//여기서 말하는 cEventAdd는 css가 아닌 div id를 얘기하는 것.
+	// 특정 이벤트가 발생시 특정 함수를 실행할 수 있게 해주는 기능
+		ceA.addEventListener("click",addHandler);
+		var ceR=document.getElementById("cEventRem");
+		ceR.addEventListener("click",removeHandler);
+	}
+</script>
+
+</head>
+<body>
+	<div id="cEventAdd">click event</div>
+	<div id="cEventRem">remove event</div>
+	
+	
+	
+</body>
+</html>
